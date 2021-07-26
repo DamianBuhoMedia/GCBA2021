@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="../../../css/bootstrap.css">
+    <link rel="stylesheet" href="../../../css/style.css">
+    <link rel="stylesheet" href="../../../css/lightslider.css">
+    <link rel="stylesheet" href="../../../css/lightbox.css">
+    <script src="../../../js/jquery-3.4.1.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/scripts.js"></script>
+    <script src="../../../js/lightslider.js"></script>
+    <script src="../../../js/lightbox.js"></script>
+
+
+    <script>
+       $(document).ready(function() {
+      $("#content-slider").lightSlider({
+                loop:true,
+                keyPress:true
+            });
+            $('#vp, #grafica, #radio, #banner').lightSlider({
+                gallery:true,
+                item:1,
+                thumbItem:5,
+                slideMargin: 0,
+                speed:500,
+                auto:true,
+                loop:true,
+                onSliderLoad: function() {
+                    $('#vp').removeClass('cS-hidden');
+                    $('#grafica').removeClass('cS-hidden');
+                    $('#radio').removeClass('cS-hidden');
+                    $('#banner').removeClass('cS-hidden');
+                }
+            });
+
+            $('#subtv, #tv, #byz, #redes, #mailing').lightSlider({
+                gallery:false,
+                item:1,
+                thumbItem:5,
+                onSliderLoad: function() {
+                    $('#subtv').removeClass('cS-hidden');
+                    $('#tv').removeClass('cS-hidden');
+                    $('#byz').removeClass('cS-hidden');
+                    $('#redes').removeClass('cS-hidden');
+                    $('#mailing').removeClass('cS-hidden');
+                }
+            });
+
+
+    });
+    </script>
+    <script>
+        lightbox.option({
+              'resizeDuration': 200,
+              'wrapAround': true
+            })
+    </script>
+
+
+  </head>
+  <body class="bgtransparent">
+
+    <div class="headercampain">
+      <div class="">
+        Objetivo de comunicación:
+      </div>
+      <p class="font12">
+        Informar a los vecinos sobre la importancia de eliminar los criaderos de mosquitos de sus casas y así prevenir el dengue.
+      </p>
+    </div>
+
+    <div class="contentcampain">
+      <div class="">
+        <div class="row">
+          <div class="col-lg-3">
+            <a href="#" onclick="volver2()"><img class="back" src="img/volver.png" alt=""> </a>
+            <div class="accordion" id="accordion">
+              <!-- DIGITAL displaynone -->
+              <div class="card ">
+                <div class="card-header" id="headingThree">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                      Digital
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  <div class="card-body">
+                    <ul class="menuoptions">
+                      <li class=""><input type="radio" name="pieceoption" id="radiobanners" onclick="view()" value="radiobanners"><label for="radiobanners">Banner</label> </li>
+                      <li class=""><input type="radio" name="pieceoption" id="radioredes" onclick="view()" value="radioredes"><label for="radioredes">Redes</label> </li>
+                      <li class="displaynone"><input type="radio" name="pieceoption"  id="radiodirecta" onclick="view()" value="radiodirecta"><label for="radiodirecta">Directa</label> </li>
+                      <li class=""><input type="radio" name="pieceoption"  id="radiomailing" onclick="view()" value="radiomailing"><label for="radiomailing">Mailing</label> </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <!-- VIA PUBLICA -->
+              <div class="card ">
+                <div class="card-header" id="mvp">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menuviapublica" aria-expanded="false" aria-controls="menuviapublica" >
+                      <input type="radio" name="pieceoption"  id="radiovp" checked onclick="view()" value="radiovp" ><label for="radiovp">Vía pública</label>
+                    </button>
+                  </h2>
+                </div>
+                <div id="menuviapublica" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                </div>
+              </div>
+              <!-- Grafica -->
+              <div class="card ">
+                <div class="card-header" id="mg">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menugrafica" aria-expanded="false" aria-controls="menugrafica" >
+                      <input type="radio" name="pieceoption"  id="radiografica" onclick="view()" value="radiografica"><label for="radiografica">Gráfica</label>
+                    </button>
+                  </h2>
+                </div>
+                <div id="menugrafica" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                </div>
+              </div>
+              <!-- Radio -->
+              <div class="card ">
+                <div class="card-header" id="mr">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menuradio" aria-expanded="false" aria-controls="menuradio" >
+                      <input type="radio" name="pieceoption"  id="radioradio" onclick="view()" value="radioradio"><label for="radioradio">Radio</label>
+                    </button>
+                  </h2>
+                </div>
+                <div id="menuradio" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                </div>
+              </div>
+              <!-- MASIVA -->
+                <div class="card ">
+                  <div class="card-header" id="headingOne">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        TV
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                      <ul class="menuoptions">
+						            <li class="displaynone"><input type="radio" name="pieceoption" id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">Pantallas</label></li>
+                        <li class="displaynone"><input type="radio" name="pieceoption"  id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">PNT</label> </li>
+                        <li class=""><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Barrida</label> </li>
+                        <li class="displaynone"><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Spot</label> </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <!-- Subtv -->
+                <div class="card displaynone">
+                  <div class="card-header" id="mstv">
+                    <h2 class="mb-0">
+                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menusubtv" aria-expanded="false" aria-controls="menusubtv" >
+                        <input type="radio" name="pieceoption"  id="radiosubtv" onclick="view()" value="radiosubtv"><label for="radiosubtv">SubTV</label>
+                      </button>
+                    </h2>
+                  </div>
+                  <div id="menusubtv" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                  </div>
+                </div>
+                </div>
+          </div>
+          <div class="col-lg-9 text-center">
+              <!--Via publica-->
+              <div class="pieces vp">
+                <ul id="vp" class="gallery list-unstyled cS-hidden">
+                    <li><a class="" href="masiva/vp/1.png" data-lightbox="1"><img class="example-image" src="masiva/vp/1.png" alt="" /></a></li>
+                    <li><a class="" href="masiva/vp/2.png" data-lightbox="1"><img class="example-image" src="masiva/vp/2.png" alt="" /></a></li>
+                    <li><a class="" href="masiva/vp/3.png" data-lightbox="1"><img class="example-image" src="masiva/vp/3.png" alt="" /></a></li>
+                    <li><a class="" href="masiva/vp/4.png" data-lightbox="1"><img class="example-image" src="masiva/vp/4.png" alt="" /></a></li>
+                </ul>
+              </div>
+              <!--Gráfica-->
+              <div class="pieces grafica hidden">
+                <ul id="grafica" class="gallery list-unstyled cS-hidden">
+                  <li><a class="" href="masiva/grafica/1.png" data-lightbox="2"><img class="example-image" src="masiva/grafica/1.png" alt="" /></a></li>
+                  <li><a class="" href="masiva/grafica/2.png" data-lightbox="2"><img class="example-image" src="masiva/grafica/2.png" alt="" /></a></li>
+                </ul>
+              </div>
+              <!--Radio-->
+              <div class="pieces radio hidden">
+                <ul id="radio" class="gallery list-unstyled cS-hidden">
+                  <li><audio controls><source src="masiva/radio/1.mp3" type="audio/mpeg"></audio></li>
+                  <li><audio controls><source src="masiva/radio/2.mp3" type="audio/mpeg"></audio></li>
+                </ul>
+              </div>
+              <!--Sub TV-->
+              <div class="pieces subtv hidden">
+                <ul id="subtv" class="gallery list-unstyled cS-hidden">
+                </ul>
+              </div>
+
+              <!--ByZ-->
+              <div class="pieces byz hidden">
+                <ul id="byz" class="gallery list-unstyled cS-hidden">
+                  <li><video controls><source src="masiva/byz/1.mp4" type="video/mp4"></video></li>
+                </ul>
+              </div>
+              <!--TV-->
+              <div class="pieces tv hidden">
+                <ul id="tv" class="gallery list-unstyled cS-hidden">
+                </ul>
+              </div>
+              <!--redes-->
+              <div class="pieces redes hidden">
+                <ul id="redes" class="gallery list-unstyled cS-hidden">
+                  <li><video controls><source src="digital/redes/1.mp4" type="video/mp4"></video></li>
+                  <li><video controls><source src="digital/redes/2.mp4" type="video/mp4"></video></li>
+                </ul>
+              </div>
+              <!--banners-->
+              <div class="pieces banner hidden">
+                <ul id="banner" class="gallery list-unstyled cS-hidden">
+                  <li><a class="" href="digital/banner/1.png" data-lightbox="3"><img class="example-image" src="digital/banner/1.png" alt="" /></a></li>
+                </ul>
+              </div>
+              <!--mailing-->
+              <div class="pieces mailing hidden">
+                <ul id="mailing" class="gallery list-unstyled cS-hidden">
+                  <li><a class="" href="directa/mailing/1.png" data-lightbox="4"><img class="example-image" src="directa/mailing/1.png" alt="" /></a></li>
+                  <li><a class="" href="directa/mailing/2.png" data-lightbox="4"><img class="example-image" src="directa/mailing/2.png" alt="" /></a></li>
+                </ul>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+  <script>
+  function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+
+  </script>
+  </body>
+</html>
