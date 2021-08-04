@@ -21,8 +21,8 @@
                 loop:true,
                 keyPress:true
             });
-            $('#vp, #grafica, #radio').lightSlider({
-                gallery:false,
+            $('#vp, #grafica, #radio, #banner').lightSlider({
+                gallery:true,
                 item:1,
                 thumbItem:5,
                 slideMargin: 0,
@@ -33,10 +33,11 @@
                     $('#vp').removeClass('cS-hidden');
                     $('#grafica').removeClass('cS-hidden');
                     $('#radio').removeClass('cS-hidden');
+                    $('#banner').removeClass('cS-hidden');
                 }
             });
 
-            $('#subtv, #tv, #byz').lightSlider({
+            $('#subtv, #tv, #byz, #redes, #mailing').lightSlider({
                 gallery:false,
                 item:1,
                 thumbItem:5,
@@ -44,6 +45,8 @@
                     $('#subtv').removeClass('cS-hidden');
                     $('#tv').removeClass('cS-hidden');
                     $('#byz').removeClass('cS-hidden');
+                    $('#redes').removeClass('cS-hidden');
+                    $('#mailing').removeClass('cS-hidden');
                 }
             });
 
@@ -63,10 +66,10 @@
 
     <div class="headercampain">
       <div class="">
-        OBJETIVOS
+        Objetivo de comunicación:
       </div>
       <p class="font12">
-        Invitar a todos los vecinos y transeúntes de la Ciudad a disfrutar, gratis, de una nueva edición de BA PLAYA. Las playas se ubican en el Parque de los Niños y el Parque Indoamericano, y cuentan con sombrillas, reposeras, duchas. Allí podrán disfrutar de juegos con agua, juegos inflables, canchas de fútbol, vóley playero, bandas en vivo, espectáculos, sectores de lectura y muchas atracciones más para vivir el verano en familia.
+        Informar a los vecinos sobre el plan de Gobierno que se está llevando a cabo en relación al COVID
       </p>
     </div>
 
@@ -76,8 +79,8 @@
           <div class="col-lg-3">
             <a href="#" onclick="volver2()"><img class="back" src="img/volver.png" alt=""> </a>
             <div class="accordion" id="accordion">
-              <!-- DIGITAL -->
-              <div class="card displaynone">
+              <!-- DIGITAL displaynone -->
+              <div class="card ">
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -88,9 +91,10 @@
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
                     <ul class="menuoptions">
-                      <li class=""><input type="radio" name="pieceoption"  id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">Banner</label> </li>
-                      <li class=""><input type="radio" name="pieceoption"  id="radiosubtv" onclick="view()" value="radiosubtv"><label for="radiosubtv">Redes</label> </li>
-                      <li class=""><input type="radio" name="pieceoption"  id="radiodirecta" onclick="view()" value="radiodirecta"><label for="radiodirecta">Directa</label> </li>
+                      <li class="displaynone"><input type="radio" name="pieceoption" id="radiobanners" onclick="view()" value="radiobanners"><label for="radiobanners">Banner</label> </li>
+                      <li class=""><input type="radio" name="pieceoption" id="radioredes" onclick="view()" value="radioredes"><label for="radioredes">Redes</label> </li>
+                      <li class="displaynone"><input type="radio" name="pieceoption"  id="radiodirecta" onclick="view()" value="radiodirecta"><label for="radiodirecta">Directa</label> </li>
+                      <li class="displaynone"><input type="radio" name="pieceoption"  id="radiomailing" onclick="view()" value="radiomailing"><label for="radiomailing">Mailing</label> </li>
                     </ul>
                   </div>
                 </div>
@@ -108,7 +112,7 @@
                 </div>
               </div>
               <!-- Grafica -->
-              <div class="card ">
+              <div class="card displaynone">
                 <div class="card-header" id="mg">
                   <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menugrafica" aria-expanded="false" aria-controls="menugrafica" >
@@ -140,18 +144,19 @@
                       </button>
                     </h2>
                   </div>
-                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                  <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                       <ul class="menuoptions">
+						            <li class=""><input type="radio" name="pieceoption" id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">Pantallas</label></li>
                         <li class="displaynone"><input type="radio" name="pieceoption"  id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">PNT</label> </li>
-                        <li class=""><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Barrida</label> </li>
+                        <li class="displaynone"><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Barrida</label> </li>
                         <li class="displaynone"><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Spot</label> </li>
                       </ul>
                     </div>
                   </div>
                 </div>
                 <!-- Subtv -->
-                <div class="card">
+                <div class="card displaynone">
                   <div class="card-header" id="mstv">
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menusubtv" aria-expanded="false" aria-controls="menusubtv" >
@@ -162,71 +167,62 @@
                   <div id="menusubtv" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                   </div>
                 </div>
-                <!-- DIRECTA -->
-                <div class="card displaynone">
-                  <div class="card-header" id="headingTwo">
-                    <h2 class="mb-0">
-                      <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                        Directa
-                      </button>
-                    </h2>
-                  </div>
-                  <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-                    <div class="card-body">
-                      <ul class="menuoptions">
-                        <li class="displaynone"><input type="radio" name="pieceoption"  id="radiografica" onclick="view()" value="radiografica"><label for="radiografica">Banner</label> </li>
-                        <li class="displaynone"><input type="radio" name="pieceoption"  id="radioradio" onclick="view()" value="radioradio"><label for="radioradio">Video</label> </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
                 </div>
           </div>
           <div class="col-lg-9 text-center">
               <!--Via publica-->
               <div class="pieces vp">
                 <ul id="vp" class="gallery list-unstyled cS-hidden">
-                    <li>
-                      <a class="" href="masiva/vp/1.png" data-lightbox="1"><img class="example-image" src="masiva/vp/1.png" alt="" /></a>
-                    </li>
-                    <li >
-                      <a class="" href="masiva/vp/1.png" data-lightbox="1"><img class="example-image" src="masiva/vp/2.png" alt="" /></a>
-                    </li>
+                    <li><a class="" href="masiva/vp/1.png" data-lightbox="1"><img class="example-image" src="masiva/vp/1.png" alt="" /></a></li>
+                    <li><a class="" href="masiva/vp/2.png" data-lightbox="1"><img class="example-image" src="masiva/vp/2.png" alt="" /></a></li>
                 </ul>
               </div>
               <!--Gráfica-->
               <div class="pieces grafica hidden">
                 <ul id="grafica" class="gallery list-unstyled cS-hidden">
-                  <li >
-                    <a class="" href="masiva/grafica/1.png" data-lightbox="1"><img class="example-image" src="masiva/grafica/1.png" alt="" /></a>
-                  </li>
                 </ul>
               </div>
               <!--Radio-->
               <div class="pieces radio hidden">
                 <ul id="radio" class="gallery list-unstyled cS-hidden">
-
                 </ul>
               </div>
               <!--Sub TV-->
               <div class="pieces subtv hidden">
                 <ul id="subtv" class="gallery list-unstyled cS-hidden">
-                  <li><video controls><source src="masiva/subtv/1.mp4" type="video/mp4"></video></li>
                 </ul>
               </div>
 
               <!--ByZ-->
               <div class="pieces byz hidden">
                 <ul id="byz" class="gallery list-unstyled cS-hidden">
-                  <li><video controls><source src="masiva/byz/1.mp4" type="video/mp4"></video></li>
                 </ul>
               </div>
               <!--TV-->
               <div class="pieces tv hidden">
                 <ul id="tv" class="gallery list-unstyled cS-hidden">
-                  <li>
-                    <a class="" href="digital/banner/1.png" data-lightbox="1"><img class="example-image" src="digital/banner/1.png" alt="" /></a>
-                  </li>
+                  <li><video controls><source src="masiva/tv/1.mp4" type="video/mp4"></video></li>
+                  <li><video controls><source src="masiva/tv/2.mp4" type="video/mp4"></video></li>
+                </ul>
+              </div>
+              <!--redes-->
+              <div class="pieces redes hidden">
+                <ul id="redes" class="gallery list-unstyled cS-hidden">
+                  <li><video controls><source src="digital/redes/1.mp4" type="video/mp4"></video></li>
+                  <li><video controls><source src="digital/redes/2.mp4" type="video/mp4"></video></li>
+                </ul>
+              </div>
+              <!--banners-->
+              <div class="pieces banner hidden">
+                <ul id="banner" class="gallery list-unstyled cS-hidden">
+                  <li><a class="" href="digital/banner/1.png" data-lightbox="3"><img class="example-image" src="digital/banner/1.png" alt="" /></a></li>
+                  <li><a class="" href="digital/banner/2.png" data-lightbox="3"><img class="example-image" src="digital/banner/2.png" alt="" /></a></li>
+                </ul>
+              </div>
+              <!--mailing-->
+              <div class="pieces mailing hidden">
+                <ul id="mailing" class="gallery list-unstyled cS-hidden">
+                  <li><a class="" href="directa/mailing/1.png" data-lightbox="4"><img class="example-image" src="directa/mailing/1.png" alt="" /></a></li>
                 </ul>
               </div>
           </div>

@@ -422,10 +422,11 @@ span.lb-number {
 .subtitle {
     margin-top: 5px;
     font-size: 12px;
-    background: #00000059;
+    background: #ffffff94;
     border-radius: 1px;
     font-weight: 100;
     padding: 3px;
+    border-radius: 5px;
 }
 
 .subtitle span {
@@ -433,8 +434,12 @@ span.lb-number {
     width: 160px;
     height: 40px;
     vertical-align: middle;
+    color: #2f2f2f;
 }
 
+#titlecamp {
+    color: #232323;
+}
 
 iframe {
     width: 100%;
@@ -453,11 +458,12 @@ iframe {
 }
 
 .headerback {
-    background: #00000094;
+    background: #ffffffb8;
     padding: 10px 10px;
     font-weight: bold;
     position: relative;
     z-index: 1;
+    border-radius: 4px;
 }
 
 
@@ -555,18 +561,24 @@ iframe {
 
 .contentcampain {
     padding: 10px 10px;
-    color: #FFF;
+    color: #151515;
     background: red;
     margin-top: 22px;
-    background: #00000094;
+    background: #ffffffd1;
     min-height: 600px;
 }
 
+a.back {
+    background: #2f2f2f;
+    padding: 5px;
+    border-radius: 5px;
+}
 
 .headercampain {
-  background: #00000094;
-  padding: 10px 10px;
-  color: #FFF;
+    background: #ffffffd1;
+    padding: 10px 10px;
+    color: #151515;
+    border-radius: 5px;
 }
 
 

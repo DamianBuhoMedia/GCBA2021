@@ -13,12 +13,7 @@
     <script src="../../../js/scripts.js"></script>
     <script src="../../../js/lightslider.js"></script>
     <script src="../../../js/lightbox.js"></script>
-    <style media="screen">
-    .pieces video {
-  width: 800px !important;
-  height: 600px;
-}
-    </style>
+
 
     <script>
        $(document).ready(function() {
@@ -26,7 +21,7 @@
                 loop:true,
                 keyPress:true
             });
-            $('#vp, #grafica, #radio, #banner, #tv').lightSlider({
+            $('#vp, #grafica, #radio, #banner').lightSlider({
                 gallery:true,
                 item:1,
                 thumbItem:5,
@@ -39,7 +34,6 @@
                     $('#grafica').removeClass('cS-hidden');
                     $('#radio').removeClass('cS-hidden');
                     $('#banner').removeClass('cS-hidden');
-                    $('#tv').removeClass('cS-hidden');
                 }
             });
 
@@ -72,11 +66,10 @@
 
     <div class="headercampain">
       <div class="">
-        OBJETIVOS
+        Objetivo de comunicación:
       </div>
       <p class="font12">
-        Reforzar con esta efeméride el concepto de que el amor hace bien, generando campana con perspectiva de género. Invitamos a los vecinos a definir el amor #DefinamosAmor, para generar consciencia sobre lo que si nos hace bien.
-      </p>
+Informar a los vecinos que AGIP estará llevando adelante un plan para que aquellos vecinos que no hayan podido pagar ABL y patente en 2020, por la situación compleja a raíz de la pandemia, tendrán la posibilidad de saldar sus deudas sin intereses punitorios.      </p>
     </div>
 
     <div class="contentcampain">
@@ -97,10 +90,10 @@
                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
                     <ul class="menuoptions">
-                      <li class="displaynone"><input type="radio" name="pieceoption"  id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">Banner</label> </li>
-                      <li class=""><input type="radio" name="pieceoption"  id="radiosubtv" onclick="view()" value="radiosubtv"><label for="radiosubtv">Redes</label> </li>
+                      <li class=""><input type="radio" name="pieceoption" id="radiobanners" onclick="view()" value="radiobanners"><label for="radiobanners">Banner</label> </li>
+                      <li class=""><input type="radio" name="pieceoption" id="radioredes" onclick="view()" value="radioredes"><label for="radioredes">Redes</label> </li>
                       <li class="displaynone"><input type="radio" name="pieceoption"  id="radiodirecta" onclick="view()" value="radiodirecta"><label for="radiodirecta">Directa</label> </li>
-                      <li class=""><input type="radio" name="pieceoption"  id="radiomailing" onclick="view()" value="radiomailing"><label for="radiomailing">Mailing</label> </li>
+                      <li class="displaynone"><input type="radio" name="pieceoption"  id="radiomailing" onclick="view()" value="radiomailing"><label for="radiomailing">Mailing</label> </li>
                     </ul>
                   </div>
                 </div>
@@ -130,7 +123,7 @@
                 </div>
               </div>
               <!-- Radio -->
-              <div class="card displaynone">
+              <div class="card ">
                 <div class="card-header" id="mr">
                   <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menuradio" aria-expanded="false" aria-controls="menuradio" >
@@ -153,7 +146,7 @@
                   <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                       <ul class="menuoptions">
-                        <li class=""><input type="radio" name="pieceoption" id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">Pantallas</label></li>
+						            <li class=""><input type="radio" name="pieceoption" id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">Pantallas</label></li>
                         <li class="displaynone"><input type="radio" name="pieceoption"  id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">PNT</label> </li>
                         <li class="displaynone"><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Barrida</label> </li>
                         <li class="displaynone"><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Spot</label> </li>
@@ -162,7 +155,7 @@
                   </div>
                 </div>
                 <!-- Subtv -->
-                <div class="card ">
+                <div class="card displaynone">
                   <div class="card-header" id="mstv">
                     <h2 class="mb-0">
                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menusubtv" aria-expanded="false" aria-controls="menusubtv" >
@@ -191,36 +184,31 @@
               <!--Radio-->
               <div class="pieces radio hidden">
                 <ul id="radio" class="gallery list-unstyled cS-hidden">
+                  <li><audio controls><source src="masiva/radio/1.mp3" type="audio/mpeg"></audio></li>
                 </ul>
               </div>
               <!--Sub TV-->
               <div class="pieces subtv hidden">
                 <ul id="subtv" class="gallery list-unstyled cS-hidden">
-                  <li><video controls><source src="masiva/subtv/1.mp4" type="video/mp4"></video></li>
                 </ul>
               </div>
 
               <!--ByZ-->
               <div class="pieces byz hidden">
                 <ul id="byz" class="gallery list-unstyled cS-hidden">
+
                 </ul>
               </div>
               <!--TV-->
               <div class="pieces tv hidden">
                 <ul id="tv" class="gallery list-unstyled cS-hidden">
-                      <li><video controls><source src="masiva/tv/1.mp4" type="video/mp4"></video></li>
-                      <li><video controls><source src="masiva/tv/2.mp4" type="video/mp4"></video></li>
-                      <li><video controls><source src="masiva/tv/3.mp4" type="video/mp4"></video></li>
-                      <li><video controls><source src="masiva/tv/4.mp4" type="video/mp4"></video></li>
-                      <li><video controls><source src="masiva/tv/5.mp4" type="video/mp4"></video></li>
+                  <li><video controls><source src="masiva/tv/1.mp4" type="video/mp4"></video></li>
                 </ul>
               </div>
               <!--redes-->
               <div class="pieces redes hidden">
                 <ul id="redes" class="gallery list-unstyled cS-hidden">
                   <li><video controls><source src="digital/redes/1.mp4" type="video/mp4"></video></li>
-                  <li><video controls><source src="digital/redes/2.mp4" type="video/mp4"></video></li>
-                  <li><video controls><source src="digital/redes/3.mp4" type="video/mp4"></video></li>
                 </ul>
               </div>
               <!--banners-->
@@ -228,6 +216,8 @@
                 <ul id="banner" class="gallery list-unstyled cS-hidden">
                   <li><a class="" href="digital/banner/1.png" data-lightbox="3"><img class="example-image" src="digital/banner/1.png" alt="" /></a></li>
                   <li><a class="" href="digital/banner/2.png" data-lightbox="3"><img class="example-image" src="digital/banner/2.png" alt="" /></a></li>
+                  <li><a class="" href="digital/banner/3.png" data-lightbox="3"><img class="example-image" src="digital/banner/3.png" alt="" /></a></li>
+                  <li><a class="" href="digital/banner/4.png" data-lightbox="3"><img class="example-image" src="digital/banner/4.png" alt="" /></a></li>
                 </ul>
               </div>
               <!--mailing-->
