@@ -421,8 +421,8 @@ span.lb-number {
 
 .subtitle {
     margin-top: 5px;
-    font-size: 12px;
-    background: #ffffff94;
+    font-size: 13px;
+    background: #ffffffd9;
     border-radius: 1px;
     font-weight: 100;
     padding: 3px;
@@ -439,6 +439,7 @@ span.lb-number {
 
 #titlecamp {
     color: #232323;
+        font-size: 20px;
 }
 
 iframe {
@@ -717,7 +718,7 @@ li.lslide.active {
 
 
 .font12 {
-    font-size: 15px;
+    font-size: 17px;
 }
 
 .lightSlider img {

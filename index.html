@@ -50,7 +50,7 @@
                                 <img src="img/marzo.png" alt="" width="" onclick="gotomarzo('bgmarzo2.jpg'); javascript:setval('marzo')">
                             </div>
                             <div class="col-lg-2 text-center">
-                                <img src="img/abril.png" alt="" width="" >
+                                <img src="img/abril.png" alt="" width="" onclick="gotoabril('bgabril2.jpg'); javascript:setval('abril')">
                             </div>
                             <div class="col-lg-2 text-center">
                                 <img src="img/mayo.png" alt="" width="" >
@@ -209,7 +209,7 @@
                         <div class="col-lg-4">
                           <a href="#" class="back" onclick="volvermarzo()">⬅ VOLVER</a>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center" style="color:#000">
                           CAMPAÑAS MARZO 2021
                         </div>
                         <div class="col-lg-4">
@@ -272,6 +272,12 @@
                             <p class="subtitle"><span>BAFICI</span> </p>
                           </div>
                         </div>
+                        <div class="col-lg-2">
+                          <div class="campimg text-center"   onclick="step3('camp/marzo/10/index.html','Estacionamiento medido')">
+                            <img src="camp/marzo/10/img/portada.png" alt="" width="">
+                            <p class="subtitle"><span>Estacionamiento medido</span> </p>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -286,7 +292,7 @@
                         <div class="col-lg-4">
                           <a href="#" class="back" onclick="volverabril()">⬅ VOLVER</a>
                         </div>
-                        <div class="col-lg-4 text-center">
+                        <div class="col-lg-4 text-center" style="color:#000">
                           CAMPAÑAS ABRIL 2021
                         </div>
                         <div class="col-lg-4">
@@ -296,123 +302,87 @@
                     <div class="container">
                       <div class="row listcamp">
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/1/index.html','Coronavirus - PBA + GCBA')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/1/index.html','BA Recicla')">
                             <img src="camp/abril/1/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Coronavirus - PBA + GCBA</span> </p>
+                            <p class="subtitle"><span>BA Recicla</span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/2/index.html','#TapateLaBoca')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/2/index.html','Plan de acción climática')">
                             <img src="camp/abril/2/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>#TapateLaBoca</span> </p>
+                            <p class="subtitle"><span>Plan de acción climática</span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/3/index.html','Tutoriales tapabocas')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/3/index.html','Contenedores verdes')">
                             <img src="camp/abril/3/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Tutoriales tapabocas</span> </p>
+                            <p class="subtitle"><span>Contenedores verdes</span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/4/index.html','Vacunación adultos mayores')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/4/index.html','Instituto de formación política')">
                             <img src="camp/abril/4/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Vacunación adultos mayores</span> </p>
+                            <p class="subtitle"><span>Instituto de formación política</span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/5/index.html','Comunidad Educativa Conectada')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/5/index.html','Vacunación gripe')">
                             <img src="camp/abril/5/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Comunidad Educativa Conectada</span> </p>
+                            <p class="subtitle"><span>Vacunación gripe</span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/6/index.html','Género Tareas domésticas')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/6/index.html','Vacunación Covid 19 - Genérico II ')">
                             <img src="camp/abril/6/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Género Tareas domésticas</span> </p>
+                            <p class="subtitle"><span>Vacunación Covid 19 - Genérico II </span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/7/index.html','Mayores Cuidados Voluntarios')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/7/index.html','Vacunación incentivos AM 80')">
                             <img src="camp/abril/7/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Mayores Cuidados Voluntarios</span> </p>
+                            <p class="subtitle"><span>Vacunación incentivos AM 80</span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/8/index.html','Mayores Cuidados +70 - Prójimo')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/8/index.html','Vacunación Covid +65')">
                             <img src="camp/abril/8/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Mayores Cuidados +70 - Prójimo</span> </p>
+                            <p class="subtitle"><span>Vacunación Covid +65</span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/9/index.html','Convocatoria médicos y kinesiólogos')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/9/index.html','Covid No dejemos de cuidarnos_v2')">
                             <img src="camp/abril/9/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Convocatoria médicos y kinesiólogos</span> </p>
+                            <p class="subtitle"><span>Covid No dejemos de cuidarnos_v2</span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/10/index.html','Lanzamiento Unidades Febriles')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/10/index.html','Nuevos Centros de Testeo')">
                             <img src="camp/abril/10/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Lanzamiento Unidades Febriles</span> </p>
+                            <p class="subtitle"><span>Nuevos Centros de Testeo</span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/11/index.html','Tutoriales Tapaboca')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/11/index.html','Vacunación incentivos AM 70')">
                             <img src="camp/abril/11/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Tutoriales Tapaboca</span> </p>
+                            <p class="subtitle"><span>Vacunación incentivos AM 70</span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/12/index.html','Mi Escuela en casa (plataforma)')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/12/index.html','Unidad Testeo Móvil')">
                             <img src="camp/abril/12/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Mi Escuela en casa (plataforma)</span> </p>
+                            <p class="subtitle"><span>Unidad Testeo Móvil </span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/13/index.html','Aprendé Programando 3.0')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/13/index.html','Vacunación incentivos AM 65')">
                             <img src="camp/abril/13/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Aprendé Programando 3.0</span> </p>
+                            <p class="subtitle"><span>Vacunación incentivos AM 65</span> </p>
                           </div>
                         </div>
                         <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/14/index.html','Género 144')">
+                          <div class="campimg text-center"   onclick="step3('camp/abril/14/index.html','Presencialidad en la escuela')">
                             <img src="camp/abril/14/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Género 144</span> </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/15/index.html','Video llamada Abuelos-Nietos')">
-                            <img src="camp/abril/15/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Video llamada Abuelos-Nietos</span> </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/16/index.html','Día mundial de la salud')">
-                            <img src="camp/abril/16/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Día mundial de la salud</span> </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/17/index.html','Día del maltrato infantil ')">
-                            <img src="camp/abril/17/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Día del maltrato infantil </span> </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/18/index.html','Mayores Cuidados +70 - Delivery ')">
-                            <img src="camp/abril/18/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Mayores Cuidados +70 - Delivery</span> </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/mayo/2/index.html','Prójimo')">
-                            <img src="camp/mayo/2/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Prójimo</span> </p>
-                          </div>
-                        </div>
-                        <div class="col-lg-2">
-                          <div class="campimg text-center"   onclick="step3('camp/abril/19/index.html','Cultura en casa')">
-                            <img src="camp/abril/19/img/portada.png" alt="" width="">
-                            <p class="subtitle"><span>Cultura en casa</span> </p>
+                            <p class="subtitle"><span>Presencialidad en la escuela</span> </p>
                           </div>
                         </div>
                       </div>
