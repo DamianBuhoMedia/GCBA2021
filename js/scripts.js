@@ -19,6 +19,7 @@ $( document ).ready(function() {
 $( document ).ready(function() {
     console.log( "ready!" );
     $("label[for=radiomailing]").text('Directa');
+    $("label[for=radiovp]").text('Vía Pública');
 });
 
 

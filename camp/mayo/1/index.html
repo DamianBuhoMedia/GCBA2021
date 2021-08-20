@@ -69,8 +69,7 @@
         Objetivo de comunicación:
       </div>
       <p class="font12">
-        Informar a los vecinos sobre la importancia de eliminar los criaderos de mosquitos de sus casas y así prevenir el dengue.
-      </p>
+Informar a los argentinos y extranjeros que pueden consultar el padrón electoral provisorio, para poder reportar errores.      </p>
     </div>
 
     <div class="contentcampain">
@@ -91,8 +90,8 @@
                 <div id="collapseThree" class="show" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
                     <ul class="menuoptions">
-                      <li class=""><input type="radio" name="pieceoption" id="radiobanners" onclick="view()" value="radiobanners"><label for="radiobanners">Banner</label> </li>
-                      <li class="displaynone"><input type="radio" name="pieceoption" id="radioredes" onclick="view()" value="radioredes"><label for="radioredes">Redes</label> </li>
+                      <li class="displaynone"><input type="radio" name="pieceoption" id="radiobanners" onclick="view()" value="radiobanners"><label for="radiobanners">Banner</label> </li>
+                      <li class=""><input type="radio" name="pieceoption" id="radioredes" onclick="view()" value="radioredes"><label for="radioredes">Redes</label> </li>
                       <li class="displaynone"><input type="radio" name="pieceoption"  id="radiodirecta" onclick="view()" value="radiodirecta"><label for="radiodirecta">Directa</label> </li>
                       <li class=""><input type="radio" name="pieceoption"  id="radiomailing" onclick="view()" value="radiomailing"><label for="radiomailing">Mailing</label> </li>
                     </ul>
@@ -111,7 +110,7 @@
                 <div id="menuviapublica" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
                 </div>
               </div>
-              <!-- Grafica displaynone-->
+              <!-- Grafica -->
               <div class="card displaynone">
                 <div class="card-header" id="mg">
                   <h2 class="mb-0">
@@ -124,7 +123,7 @@
                 </div>
               </div>
               <!-- Radio -->
-              <div class="card ">
+              <div class="card displaynone">
                 <div class="card-header" id="mr">
                   <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menuradio" aria-expanded="false" aria-controls="menuradio" >
@@ -136,7 +135,7 @@
                 </div>
               </div>
               <!-- MASIVA -->
-                <div class="card ">
+                <div class="card displaynone">
                   <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
                       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -147,10 +146,10 @@
                   <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                       <ul class="menuoptions">
-						            <li class="displaynone"><input type="radio" name="pieceoption" id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">Pantallas</label></li>
+						<li class=""><input type="radio" name="pieceoption" id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">Pantallas</label></li>
                         <li class="displaynone"><input type="radio" name="pieceoption"  id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">PNT</label> </li>
                         <li class=""><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Barrida</label> </li>
-                        <li class="displaynone"><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Spot</label> </li>
+                        <li class=""><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Spot</label> </li>
                       </ul>
                     </div>
                   </div>
@@ -170,13 +169,12 @@
                 </div>
           </div>
           <div class="col-lg-9 text-center">
-              <!--banners-->
-              <div class="pieces banner ">
-                <ul id="banner" class="gallery list-unstyled cS-hidden">
-                  <li><a class="" href="digital/banner/1.png" data-lightbox="3"><img class="example-image" src="digital/banner/1.png" alt="" /></a></li>
-                  <li><a class="" href="digital/banner/2.png" data-lightbox="3"><img class="example-image" src="digital/banner/2.png" alt="" /></a></li>
-                </ul>
-              </div>
+            <!--redes-->
+            <div class="pieces redes ">
+              <ul id="redes" class="gallery list-unstyled cS-hidden">
+                <li><video controls><source src="digital/redes/1.mp4" type="video/mp4"></video></li>
+              </ul>
+            </div>
               <!--Via publica-->
               <div class="pieces vp hidden">
                 <ul id="vp" class="gallery list-unstyled cS-hidden">
@@ -190,20 +188,17 @@
               <!--Radio-->
               <div class="pieces radio hidden">
                 <ul id="radio" class="gallery list-unstyled cS-hidden">
-                  <li><audio controls><source src="masiva/radio/1.mp3" type="audio/mpeg"></audio></li>
                 </ul>
               </div>
               <!--Sub TV-->
               <div class="pieces subtv hidden">
                 <ul id="subtv" class="gallery list-unstyled cS-hidden">
-                  <li><video controls><source src="masiva/subtv/1.mp4" type="video/mp4"></video></li>
                 </ul>
               </div>
 
               <!--ByZ-->
               <div class="pieces byz hidden">
                 <ul id="byz" class="gallery list-unstyled cS-hidden">
-                  <li><video controls><source src="masiva/byz/1.mp4" type="video/mp4"></video></li>
                 </ul>
               </div>
               <!--TV-->
@@ -211,16 +206,15 @@
                 <ul id="tv" class="gallery list-unstyled cS-hidden">
                 </ul>
               </div>
-              <!--redes-->
-              <div class="pieces redes hidden">
-                <ul id="redes" class="gallery list-unstyled cS-hidden">
+              <!--banners-->
+              <div class="pieces banner hidden">
+                <ul id="banner" class="gallery list-unstyled cS-hidden">
                 </ul>
               </div>
               <!--mailing-->
               <div class="pieces mailing hidden">
                 <ul id="mailing" class="gallery list-unstyled cS-hidden">
                   <li><a class="" href="directa/mailing/1.png" data-lightbox="4"><img class="example-image" src="directa/mailing/1.png" alt="" /></a></li>
-                  <li><a class="" href="directa/mailing/2.png" data-lightbox="4"><img class="example-image" src="directa/mailing/2.png" alt="" /></a></li>
                 </ul>
               </div>
           </div>
