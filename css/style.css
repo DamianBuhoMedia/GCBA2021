@@ -216,6 +216,10 @@ html, body {
   transform: scale(2);
 }
 
+.pt-page-2, .pt-page-3 {
+    background-position: center !important;
+    background-size: cover !important;
+}
 
 .menuoptions label {
     cursor: pointer;
