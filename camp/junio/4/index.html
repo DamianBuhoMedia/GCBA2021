@@ -91,7 +91,7 @@ Informar el inicio del empadronamiento de la vacunación contra el COVID-19 para
                   <div class="card-body">
                     <ul class="menuoptions">
                       <li class=""><input type="radio" name="pieceoption" id="radiobanners" onclick="view()" value="radiobanners"><label for="radiobanners">Banner</label> </li>
-                      <li class="displaynone"><input type="radio" name="pieceoption" id="radioredes" onclick="view()" value="radioredes"><label for="radioredes">Redes</label> </li>
+                      <li class=""><input type="radio" name="pieceoption" id="radioredes" onclick="view()" value="radioredes"><label for="radioredes">Redes</label> </li>
                       <li class="displaynone"><input type="radio" name="pieceoption"  id="radiodirecta" onclick="view()" value="radiodirecta"><label for="radiodirecta">Directa</label> </li>
                       <li class=""><input type="radio" name="pieceoption"  id="radiomailing" onclick="view()" value="radiomailing"><label for="radiomailing">Mailing</label> </li>
                     </ul>
@@ -169,8 +169,14 @@ Informar el inicio del empadronamiento de la vacunación contra el COVID-19 para
                 </div>
           </div>
           <div class="col-lg-9 text-center">
+            <!--redes-->
+            <div class="pieces redes ">
+              <ul id="redes" class="gallery list-unstyled cS-hidden">
+                <li><video controls><source src="digital/redes/1.mp4" type="video/mp4"></video></li>
+              </ul>
+            </div>
             <!--banners-->
-            <div class="pieces banner ">
+            <div class="pieces banner hidden">
               <ul id="banner" class="gallery list-unstyled cS-hidden">
                 <li><a class="" href="digital/banner/1.png" data-lightbox="3"><img class="example-image" src="digital/banner/1.png" alt="" /></a></li>
               </ul>
