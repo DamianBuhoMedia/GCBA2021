@@ -79,7 +79,7 @@ Informar a los vecinos que se suman más ecobicis y estaciones para que puedan t
             <a href="#" onclick="volver2()"><img class="back" src="img/volver.png" alt=""> </a>
             <div class="accordion" id="accordion">
               <!-- DIGITAL displaynone -->
-              <div class="card displaynone">
+              <div class="card">
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
@@ -87,11 +87,11 @@ Informar a los vecinos que se suman más ecobicis y estaciones para que puedan t
                     </button>
                   </h2>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="collapseThree" class="show" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
                     <ul class="menuoptions">
                       <li class=""><input type="radio" name="pieceoption" id="radiobanners" onclick="view()" value="radiobanners"><label for="radiobanners">Banner</label> </li>
-                      <li class=""><input type="radio" name="pieceoption" id="radioredes" onclick="view()" value="radioredes"><label for="radioredes">Redes</label> </li>
+                      <li class="displaynone"><input type="radio" name="pieceoption" id="radioredes" onclick="view()" value="radioredes"><label for="radioredes">Redes</label> </li>
                       <li class="displaynone"><input type="radio" name="pieceoption"  id="radiodirecta" onclick="view()" value="radiodirecta"><label for="radiodirecta">Directa</label> </li>
                       <li class=""><input type="radio" name="pieceoption"  id="radiomailing" onclick="view()" value="radiomailing"><label for="radiomailing">Mailing</label> </li>
                     </ul>
@@ -111,7 +111,7 @@ Informar a los vecinos que se suman más ecobicis y estaciones para que puedan t
                 </div>
               </div>
               <!-- Grafica -->
-              <div class="card ">
+              <div class="card  displaynone">
                 <div class="card-header" id="mg">
                   <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menugrafica" aria-expanded="false" aria-controls="menugrafica" >
@@ -169,10 +169,16 @@ Informar a los vecinos que se suman más ecobicis y estaciones para que puedan t
                 </div>
           </div>
           <div class="col-lg-9 text-center">
-            <!--Gráfica-->
-            <div class="pieces grafica ">
-              <ul id="grafica" class="gallery list-unstyled cS-hidden">
+            <!--banners-->
+            <div class="pieces banner ">
+              <ul id="banner" class="gallery list-unstyled cS-hidden">
                 <li><a class="" href="masiva/grafica/1.png" data-lightbox="2"><img class="example-image" src="masiva/grafica/1.png" alt="" /></a></li>
+              </ul>
+            </div>
+            <!--Gráfica-->
+            <div class="pieces grafica hidden">
+              <ul id="grafica" class="gallery list-unstyled cS-hidden">
+
               </ul>
             </div>
               <!--Via publica-->
@@ -206,14 +212,10 @@ Informar a los vecinos que se suman más ecobicis y estaciones para que puedan t
                 <ul id="redes" class="gallery list-unstyled cS-hidden">
                 </ul>
               </div>
-              <!--banners-->
-              <div class="pieces banner hidden">
-                <ul id="banner" class="gallery list-unstyled cS-hidden">
-                </ul>
-              </div>
               <!--mailing-->
               <div class="pieces mailing hidden">
                 <ul id="mailing" class="gallery list-unstyled cS-hidden">
+                  <li><a class="" href="directa/mailing/1.png" data-lightbox="32"><img class="example-image" src="directa/mailing/1.png" alt="" /></a></li>
                 </ul>
               </div>
           </div>
