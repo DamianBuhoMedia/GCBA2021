@@ -69,7 +69,7 @@
         Objetivo de comunicación:
       </div>
       <p class="font12">
-        Es una campaña conceptual, apelar desde lo emotivo el regreso a la nueva normalidad.
+        Convocar a los jóvenes para que participen de la Expo Joven 2021.
       </p>
     </div>
 
@@ -80,21 +80,21 @@
             <a href="#" onclick="volver2()"><img class="back" src="img/volver.png" alt=""> </a>
             <div class="accordion" id="accordion">
               <!-- DIGITAL displaynone -->
-              <div class="card displaynone">
+              <div class="card ">
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Digital
                     </button>
                   </h2>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="collapseThree" class="show" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
                     <ul class="menuoptions">
-                      <li class=""><input type="radio" name="pieceoption" id="radiobanners" onclick="view()" value="radiobanners"><label for="radiobanners">Banner</label> </li>
+                      <li class=""><input type="radio" name="pieceoption" checked id="radiobanners" onclick="view()" value="radiobanners"><label for="radiobanners">Banner</label> </li>
                       <li class=""><input type="radio" name="pieceoption" id="radioredes" onclick="view()" value="radioredes"><label for="radioredes">Redes</label> </li>
                       <li class="displaynone"><input type="radio" name="pieceoption"  id="radiodirecta" onclick="view()" value="radiodirecta"><label for="radiodirecta">Directa</label> </li>
-                      <li class=""><input type="radio" name="pieceoption"  id="radiomailing" onclick="view()" value="radiomailing"><label for="radiomailing">Mailing</label> </li>
+                      <li class=""><input type="radio" name="pieceoption"  id="radiomailing" onclick="view()" value="radiomailing"><label for="radiomailing">Directa</label> </li>
                     </ul>
                   </div>
                 </div>
@@ -104,7 +104,7 @@
                 <div class="card-header" id="mvp">
                   <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menuviapublica" aria-expanded="false" aria-controls="menuviapublica" >
-                      <input type="radio" name="pieceoption"  id="radiovp" checked onclick="view()" value="radiovp" ><label for="radiovp">Vía pública</label>
+                      <input type="radio" name="pieceoption"  id="radiovp"  onclick="view()" value="radiovp" ><label for="radiovp">Vía pública</label>
                     </button>
                   </h2>
                 </div>
@@ -147,10 +147,10 @@
                   <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordion">
                     <div class="card-body">
                       <ul class="menuoptions">
-						<li class=""><input type="radio" name="pieceoption" id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">Pantallas</label></li>
+						            <li class=""><input type="radio" name="pieceoption" id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">Pantallas</label></li>
                         <li class="displaynone"><input type="radio" name="pieceoption"  id="radiotv" onclick="view()" value="radiotv"><label for="radiotv">PNT</label> </li>
-                        <li class=""><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Barrida</label> </li>
-                        <li class=""><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Spot</label> </li>
+                        <li class="displaynone"><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Barrida</label> </li>
+                        <li class="displaynone"><input type="radio" name="pieceoption"  id="radiobyz" onclick="view()" value="radiobyz"><label for="radiobyz">Spot</label> </li>
                       </ul>
                     </div>
                   </div>
@@ -169,25 +169,43 @@
                 </div>
                 </div>
           </div>
+
+
+
+
+
+
+
+
+
           <div class="col-lg-9 text-center">
+
+
+
+            <!--banners-->
+            <div class="pieces banner ">
+              <ul id="banner" class="gallery list-unstyled cS-hidden">
+                <li><a class="" href="digital/banner/1.png" data-lightbox="3"><img class="example-image" src="digital/banner/1.png" alt="" /></a></li>
+              </ul>
+            </div>
+
+
               <!--Via publica-->
-              <div class="pieces vp">
+              <div class="pieces vp hidden">
                 <ul id="vp" class="gallery list-unstyled cS-hidden">
                     <li><a class="" href="masiva/vp/1.png" data-lightbox="1"><img class="example-image" src="masiva/vp/1.png" alt="" /></a></li>
-                    <li><a class="" href="masiva/vp/2.png" data-lightbox="1"><img class="example-image" src="masiva/vp/2.png" alt="" /></a></li>
-                    <li><a class="" href="masiva/vp/3.png" data-lightbox="1"><img class="example-image" src="masiva/vp/3.png" alt="" /></a></li>
-                    <li><a class="" href="masiva/vp/4.png" data-lightbox="1"><img class="example-image" src="masiva/vp/4.png" alt="" /></a></li>
-                    <li><a class="" href="masiva/vp/5.png" data-lightbox="1"><img class="example-image" src="masiva/vp/5.png" alt="" /></a></li>
                 </ul>
               </div>
               <!--Gráfica-->
               <div class="pieces grafica hidden">
                 <ul id="grafica" class="gallery list-unstyled cS-hidden">
+                  <li><a class="" href="masiva/grafica/1.png" data-lightbox="2"><img class="example-image" src="masiva/grafica/1.png" alt="" /></a></li>
                 </ul>
               </div>
               <!--Radio-->
               <div class="pieces radio hidden">
                 <ul id="radio" class="gallery list-unstyled cS-hidden">
+                  <li><audio controls><source src="masiva/radio/1.mp3" type="audio/mpeg"></audio></li>
                 </ul>
               </div>
               <!--Sub TV-->
@@ -199,26 +217,26 @@
               <!--ByZ-->
               <div class="pieces byz hidden">
                 <ul id="byz" class="gallery list-unstyled cS-hidden">
+
                 </ul>
               </div>
               <!--TV-->
               <div class="pieces tv hidden">
                 <ul id="tv" class="gallery list-unstyled cS-hidden">
+                  <li><video controls><source src="masiva/tv/1.mp4" type="video/mp4"></video></li>
                 </ul>
               </div>
               <!--redes-->
               <div class="pieces redes hidden">
                 <ul id="redes" class="gallery list-unstyled cS-hidden">
+                  <li><video controls><source src="digital/redes/1.mp4" type="video/mp4"></video></li>
                 </ul>
               </div>
-              <!--banners-->
-              <div class="pieces banner hidden">
-                <ul id="banner" class="gallery list-unstyled cS-hidden">
-                </ul>
-              </div>
+
               <!--mailing-->
               <div class="pieces mailing hidden">
                 <ul id="mailing" class="gallery list-unstyled cS-hidden">
+                  <li><a class="" href="directa/mailing/1.png" data-lightbox="4"><img class="example-image" src="directa/mailing/1.png" alt="" /></a></li>
                 </ul>
               </div>
           </div>
