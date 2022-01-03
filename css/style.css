@@ -826,3 +826,9 @@ label {
 .headercampain div {
     text-decoration: underline;
 }
+
+.row.listcamp {
+    overflow-y: scroll;
+    height: 600px;
+    padding-bottom: 50px;
+}
