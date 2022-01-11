@@ -69,8 +69,7 @@
         Objetivo de comunicación:
       </div>
       <p class="font12">
-        Mostrar a Buenos Aires como un destino seguro, y preparado para recibir turistas post COVID-19. Construir un mensaje que denote apertura, actividad, movimiento y puertas abiertas para construir confianza e invitar a visitar la Ciudad.
-      </p>
+Invitar a los vecinos y las vecinas de la Ciudad a disfrutar de una programación gratuita de martes a domingos en el Centro Cultural Recoleta. La programación incluye recitales en la terraza, obras de teatro en los patios, ferias, hip hop, beatbox, y muestras en salas de artes visuales.      </p>
     </div>
 
     <div class="contentcampain">
@@ -83,18 +82,18 @@
               <div class="card ">
                 <div class="card-header" id="headingThree">
                   <h2 class="mb-0">
-                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                       Digital
                     </button>
                   </h2>
                 </div>
-                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                <div id="collapseThree" class="show" aria-labelledby="headingThree" data-parent="#accordion">
                   <div class="card-body">
                     <ul class="menuoptions">
-                      <li class="displaynone"><input type="radio" name="pieceoption" id="radiobanners" onclick="view()" value="radiobanners"><label for="radiobanners">Banner</label> </li>
+                      <li class=""><input type="radio" name="pieceoption" checked id="radiobanners" onclick="view()" value="radiobanners"><label for="radiobanners">Banner</label> </li>
                       <li class=""><input type="radio" name="pieceoption" id="radioredes" onclick="view()" value="radioredes"><label for="radioredes">Redes</label> </li>
-                      <li class="displaynone"><input type="radio" name="pieceoption"  id="radiodirecta" onclick="view()" value="radiodirecta"><label for="radiodirecta">Directa</label> </li>
-                      <li class="displaynone"><input type="radio" name="pieceoption"  id="radiomailing" onclick="view()" value="radiomailing"><label for="radiomailing">Mailing</label> </li>
+                      <li class="displaynone"><input type="radio" name="pieceoption"  id="radiodirecta" onclick="view()" value="radiodirecta"><label for="radiodirecta"></label> </li>
+                      <li class=""><input type="radio" name="pieceoption"  id="radiomailing" onclick="view()" value="radiomailing"><label for="radiomailing">Directa</label> </li>
                     </ul>
                   </div>
                 </div>
@@ -104,7 +103,7 @@
                 <div class="card-header" id="mvp">
                   <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menuviapublica" aria-expanded="false" aria-controls="menuviapublica" >
-                      <input type="radio" name="pieceoption"  id="radiovp" checked onclick="view()" value="radiovp" ><label for="radiovp">Vía pública</label>
+                      <input type="radio" name="pieceoption"  id="radiovp"  onclick="view()" value="radiovp" ><label for="radiovp">Vía pública</label>
                     </button>
                   </h2>
                 </div>
@@ -112,7 +111,7 @@
                 </div>
               </div>
               <!-- Grafica -->
-              <div class="card ">
+              <div class="card displaynone">
                 <div class="card-header" id="mg">
                   <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menugrafica" aria-expanded="false" aria-controls="menugrafica" >
@@ -124,7 +123,7 @@
                 </div>
               </div>
               <!-- Radio -->
-              <div class="card ">
+              <div class="card displaynone">
                 <div class="card-header" id="mr">
                   <h2 class="mb-0">
                     <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#menuradio" aria-expanded="false" aria-controls="menuradio" >
@@ -136,7 +135,7 @@
                 </div>
               </div>
               <!-- MASIVA -->
-                <div class="card ">
+                <div class="card displaynone">
                   <div class="card-header" id="headingOne">
                     <h2 class="mb-0">
                       <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
@@ -169,27 +168,41 @@
                 </div>
                 </div>
           </div>
+
+
+
+
+
+
+
+
+
           <div class="col-lg-9 text-center">
+
+
+
+            <!--banners-->
+            <div class="pieces banner ">
+              <ul id="banner" class="gallery list-unstyled cS-hidden">
+                <li><a class="" href="digital/banner/1.png" data-lightbox="3"><img class="example-image" src="digital/banner/1.png" alt="" /></a></li>
+              </ul>
+            </div>
+
+
               <!--Via publica-->
-              <div class="pieces vp">
+              <div class="pieces vp hidden">
                 <ul id="vp" class="gallery list-unstyled cS-hidden">
                     <li><a class="" href="masiva/vp/1.png" data-lightbox="1"><img class="example-image" src="masiva/vp/1.png" alt="" /></a></li>
-                    <li><a class="" href="masiva/vp/2.png" data-lightbox="1"><img class="example-image" src="masiva/vp/2.png" alt="" /></a></li>
-                    <li><a class="" href="masiva/vp/3.png" data-lightbox="1"><img class="example-image" src="masiva/vp/3.png" alt="" /></a></li>
-                    <li><a class="" href="masiva/vp/4.png" data-lightbox="1"><img class="example-image" src="masiva/vp/4.png" alt="" /></a></li>
                 </ul>
               </div>
               <!--Gráfica-->
               <div class="pieces grafica hidden">
                 <ul id="grafica" class="gallery list-unstyled cS-hidden">
-                  <li><a class="" href="masiva/grafica/1.png" data-lightbox="2"><img class="example-image" src="masiva/grafica/1.png" alt="" /></a></li>
-                  <li><a class="" href="masiva/grafica/2.png" data-lightbox="2"><img class="example-image" src="masiva/grafica/2.png" alt="" /></a></li>
                 </ul>
               </div>
               <!--Radio-->
               <div class="pieces radio hidden">
                 <ul id="radio" class="gallery list-unstyled cS-hidden">
-                  <li><audio controls><source src="masiva/radio/1.mp3" type="audio/mpeg"></audio></li>
                 </ul>
               </div>
               <!--Sub TV-->
@@ -207,25 +220,15 @@
               <!--TV-->
               <div class="pieces tv hidden">
                 <ul id="tv" class="gallery list-unstyled cS-hidden">
-                  <li><video controls><source src="masiva/tv/1.mp4" type="video/mp4"></video></li>
-                  <li><video controls><source src="masiva/tv/2.mp4" type="video/mp4"></video></li>
                 </ul>
               </div>
               <!--redes-->
               <div class="pieces redes hidden">
                 <ul id="redes" class="gallery list-unstyled cS-hidden">
                   <li><video controls><source src="digital/redes/1.mp4" type="video/mp4"></video></li>
-                  <li><video controls><source src="digital/redes/2.mp4" type="video/mp4"></video></li>
-                  <li><video controls><source src="digital/redes/3.mp4" type="video/mp4"></video></li>
                 </ul>
               </div>
-              <!--banners-->
-              <div class="pieces banner hidden">
-                <ul id="banner" class="gallery list-unstyled cS-hidden">
-                  <li><a class="" href="digital/banner/1.png" data-lightbox="3"><img class="example-image" src="digital/banner/1.png" alt="" /></a></li>
-                  <li><a class="" href="digital/banner/2.png" data-lightbox="3"><img class="example-image" src="digital/banner/2.png" alt="" /></a></li>
-                </ul>
-              </div>
+
               <!--mailing-->
               <div class="pieces mailing hidden">
                 <ul id="mailing" class="gallery list-unstyled cS-hidden">
