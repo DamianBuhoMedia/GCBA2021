@@ -26,7 +26,7 @@ html, body { height: 100%; }
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
-	overflow: scroll;
+	overflow-y: scroll;
 }
 
 .pt-page-current,
