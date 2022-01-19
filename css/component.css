@@ -26,6 +26,7 @@ html, body { height: 100%; }
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	transform-style: preserve-3d;
+	overflow: scroll;
 }
 
 .pt-page-current,
@@ -74,7 +75,7 @@ html, body { height: 100%; }
 }
 
 .pt-page-1 {
-	background: #0ac2d2;
+	background: #FFF;
 }
 
 .pt-page-2 {
