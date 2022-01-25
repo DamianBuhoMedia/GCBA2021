@@ -824,7 +824,17 @@ label {
 }
 
 .headercampain div {
-    text-decoration: underline;
+    position: relative;
+}
+
+.headercampain div:after {
+    content: '';
+    position: absolute;
+    width: 212px;
+    display: block;
+    height: 2px;
+    background-color: #000;
+    bottom: 4px;
 }
 
 .row.listcamp {
